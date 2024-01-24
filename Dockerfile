@@ -1,5 +1,5 @@
 # ----- EIB Builder Image -----
-FROM registry.suse.com/bci/golang:1.21
+FROM bci/golang:1.21
 
 WORKDIR /src
 COPY . ./
@@ -13,7 +13,7 @@ RUN go build ./cmd/eib
 
 
 # ----- Deliverable Image -----
-FROM opensuse/leap:15.5
+FROM suse/sle15:15.5
 
 # Dependency uses by line
 # 1. ISO image building
