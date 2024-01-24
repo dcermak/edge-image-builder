@@ -1,3 +1,5 @@
+#!BuildTag: suse/edge/eib:latest
+
 # ----- EIB Builder Image -----
 FROM bci/golang:1.21
 
